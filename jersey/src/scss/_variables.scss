@@ -1,0 +1,10 @@
+$primary-color: #4F42E2;
+$secondary-color: #fff;
+@mixin fontStyle {
+    font-family: 'Poppins', sans-serif;
+}
+
+%container {
+    margin: 0 auto;
+    width: 90%;
+}

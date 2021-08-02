@@ -1,0 +1,70 @@
+@import '../../scss/variables';
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: 1.2em;
+    width: 100%;
+    &-content {
+        display: flex;
+        @extend %container;
+        &-left {
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+            &-header {
+                font-weight: 650;
+                margin-bottom: 0.4px;
+            }
+            &-input {
+                outline: none;
+                background: none;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                color: $secondary-color;
+                border-bottom: 1.4px solid $secondary-color;
+            }
+            &-button {
+                margin-top: 20px;
+                width: 70%;
+            }
+        }
+        &-right {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin-left: 50px;
+            &-header {
+                font-weight: 650;
+                margin-bottom: 0.4px;
+            }
+            &-icons {
+                display: flex;
+                width: 30%;
+                justify-content: space-between;
+            }
+        }
+    }
+    &-copyright {
+        margin-top: 30px;
+        text-align: center;
+    }
+    @media screen and (max-width: 43.75em) {
+        &-content {
+            flex-direction: column;
+            &-left {
+                width: 100%;
+                &-input {
+                    width: 90%;
+                }
+            }
+            &-right {
+                width: 100%;
+                margin-left: 0;
+                margin-top: 30px;
+            }
+        }
+    }
+}

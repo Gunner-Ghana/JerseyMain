@@ -1,0 +1,23 @@
+@import '../../scss/variables';
+
+.jbanner-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &-info {
+        color: $primary-color;
+        font-weight: 600;
+        margin-bottom: 2px;
+    }
+    &-price {
+        margin-top: 2px;
+        color: $primary-color;
+        font-weight: 600;
+        margin-left: -5px;
+    }
+    &-buy {
+        margin-top: 2px;
+        margin-bottom: 20px;
+        margin-left: -5px;
+    }
+}

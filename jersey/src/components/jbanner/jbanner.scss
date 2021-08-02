@@ -1,0 +1,56 @@
+@import '../../scss/variables';
+
+.jbanner-main {
+    display: flex;
+    flex-direction: column;
+    @extend %container;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+    &-header{
+        margin-bottom: 20px;
+        padding-left: 20px;
+        color: $primary-color;
+    }
+    &-content{
+        display: flex;
+        justify-content: center;
+        &-arrow-left {
+            align-self: center;
+            margin-right: 70px;
+            margin-top: -110px;
+            color: $primary-color;
+            font-size: 70px;
+            cursor: pointer;
+        }
+        &-arrow-right {
+            align-self: center;
+            margin-left: 50px;
+            margin-top: -110px;
+            color: $primary-color;
+            font-size: 70px;
+            cursor: pointer;
+        }
+    }
+    @media screen and (max-width: 43.75em){
+        &-content {
+            &-arrow-left {
+                align-self: center;
+                margin-right: 40px;
+                margin-top: -110px;
+                color: $primary-color;
+                font-size: 70px;
+                cursor: pointer;
+            }
+            &-arrow-right {
+                align-self: center;
+                margin-left: 20px;
+                margin-top: -110px;
+                color: $primary-color;
+                font-size: 70px;
+                cursor: pointer;
+            }
+        }
+    }
+    
+}

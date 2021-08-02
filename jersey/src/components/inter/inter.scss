@@ -1,0 +1,23 @@
+@import '../../scss/variables';
+.inter-main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 30px;
+    background-color: $primary-color;
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        @extend %container;
+        &-title {
+            color: #fff;
+            font-size: 20px;
+        }
+        &-button{
+            margin-top: 24px;
+        }
+    }
+    &-jerseys {
+        display: flex;
+    }
+}

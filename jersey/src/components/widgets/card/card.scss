@@ -1,0 +1,44 @@
+@import '../../../scss/variables';
+.card-main {
+    display: flex;
+    flex-direction: column;
+    box-shadow: .2px .2px #000;
+    height: 220px;
+    border-radius: 5px;
+    padding: 1.2rem;
+    &-title {
+        text-align: center;
+        color: $primary-color;
+        font-weight: 700;
+        font-size: 8px;
+        margin-bottom: 0;
+        &-sec {
+            margin-top: 0;
+            text-align: center;
+            color: $primary-color;
+            font-size: 8px;
+            font-weight: 900;
+        }
+    }
+    &-image {
+        width: 130px;
+        height: 140px;
+    }
+    &-button {
+        width: 90px;
+        align-self: center;
+        text-align: center;
+    }
+    @media screen and (max-width: 43.75em){
+        padding: 0;
+        margin: 2px;
+        &-title {
+            font-size: 9px;
+            margin-bottom: 1px;
+        }
+        &-image {
+            align-self: center;
+            margin-top: 2px;
+        }
+    }
+}

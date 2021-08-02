@@ -1,0 +1,108 @@
+@import '../scss/variables';
+*{
+    box-sizing: border-box;
+}
+
+
+
+.login-main{
+    border: 1px solid $secondary-color;
+    background: $primary-color;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    border-radius: 5px;
+    &-form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px;
+        &-label {
+            color: $secondary-color;
+            margin-left: 165px;
+            margin-right: 165px;
+            margin-top: 15px;
+            font-weight: bolder;
+        }
+        input {
+            outline: none;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid $secondary-color;
+            background: none;
+        }
+    }
+    &-banner {
+        text-align: center;
+        color: $secondary-color;
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    &-header {
+        text-align: center;
+        color: $secondary-color;
+        font-size: 20px; 
+        margin-top: 5px;
+    }
+    button{
+        background: $secondary-color;
+        outline: none;
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        width: 60%;
+        margin-left: 165px;
+        margin-top: 20px;
+        padding: 10px;
+        font-weight: bolder;
+    }
+    &-signup {
+        padding: 20px;
+        p {
+            color: $secondary-color;
+            text-align: center;
+            a {
+                color: $secondary-color;
+            }
+        }
+    }
+    @media screen and (max-width: 43.75em){
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        &-form {
+            width: 80%;
+            &-label {
+                color: $secondary-color;
+                margin-left: 30px;
+                margin-top: 15px;
+                font-weight: bolder;
+            }
+            input {
+                outline: none;
+                width: 100%;
+                border-top: none;
+                margin-left: 30px;
+                border-left: none;
+                border-right: none;
+                border-bottom: 1px solid $secondary-color;
+                background: none;
+            }
+        }
+        button{
+            background: $secondary-color;
+            outline: none;
+            border: 1px solid $primary-color;
+            color: $primary-color;
+            width: 75%;
+            margin-left: 39px;
+            margin-top: 20px;
+            padding: 10px;
+            font-weight: bolder;
+        }
+    }
+}

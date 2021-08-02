@@ -1,0 +1,11 @@
+@import '../../scss/variables';
+
+.ncard {
+    display: flex;
+    @extend %container;
+    justify-content: space-between;
+    @media screen and (max-width: 43.75em){
+        display: flex;
+        flex-direction: column;
+    }
+}
